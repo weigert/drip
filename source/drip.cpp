@@ -115,9 +115,11 @@ int main( int argc, char* args[] ) {
 	}
 
 	//Display the Image
-	img.save_png(std::strcat(args[1], std::strcat(args[2], "_dripped.png")));
-	img.display(args[1]); // Display the image in a display window.
-
+	//Display the Image
+	std::string newname = "output"+std::to_string((int)dist)+".png";
+	//std::string newname = (std::string)filename+std::to_string(dist)+".png";
+	img.save_png(newname.c_str());
+	
 	return 0;
 }
 
