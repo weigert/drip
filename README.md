@@ -35,3 +35,6 @@ The original motivation was to do some image region detection and analysis, but 
     
     If you want to convert and scale (because you're maybe applying it to small images, as my code is horrible):
     > convert -delay 20 output*.png -resize 1000% -loop 0 movie.gif
+    
+    Reverse the GIF too (plays forward and backwards)
+    > convert output*.png -coalesce -duplicate 1,-2-1 \ -loop 0 movie.gif
