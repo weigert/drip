@@ -21,5 +21,5 @@ The original motivation was to do some image region detection and analysis, but 
 ## Converting to GIF
 Use the imagemagick command convert:
 
-#convert -delay $5 output*.png -loop 0 movie.gif
+#convert -delay 20 output*.png -loop 0 movie.gif
 
