@@ -7,6 +7,8 @@ Version: 1.0
 #include "CImg.h"
 #include <math.h>
 #include <iostream>
+#include <iomanip>
+#include <sstream>
 
 using namespace cimg_library;
 
@@ -116,10 +118,12 @@ int main( int argc, char* args[] ) {
 
 	//Display the Image
 	//Display the Image
-	std::string newname = "output"+std::to_string((int)dist)+".png";
+	std::ostringstream out;
+  out << std::setw(5) << std::setfill('0') << std::to_string((int)dist);
+	std::string newname = "output"+out.str()+".png";
 	//std::string newname = (std::string)filename+std::to_string(dist)+".png";
 	img.save_png(newname.c_str());
-	
+
 	return 0;
 }
 
