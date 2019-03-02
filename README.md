@@ -32,3 +32,6 @@ The original motivation was to do some image region detection and analysis, but 
 ## Converting to GIF
     Use the imagemagick command convert: *20 Milliseconds between frames, use all output*.png, loop forever, output movie.gif*
     > convert -delay 20 output*.png -loop 0 movie.gif
+    
+    If you want to convert and scale (because you're maybe applying it to small images, as my code is horrible):
+    > convert -delay 20 output*.png -resize 1000% -loop 0 movie.gif
