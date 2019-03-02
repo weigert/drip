@@ -1,6 +1,8 @@
 # drip
 Melting Image Filter
 
+Article: http://weigert.vsos.ethz.ch/2019/03/01/glitchy-image-filter/
+
 ## Description:
 A C++ program capable of taking a (small, recommended ~200 PX Dimension) image and spitting out a "melted" version. You can choose the degree of melting as an input parameter. 
 
